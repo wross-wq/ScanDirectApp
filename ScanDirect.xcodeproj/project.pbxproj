@@ -13,6 +13,32 @@
 		44BB2BBD29A83DB5000643A9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44BB2BBC29A83DB5000643A9 /* Preview Assets.xcassets */; };
 		44BB2BBF29A83DB5000643A9 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BB2BBE29A83DB5000643A9 /* Persistence.swift */; };
 		44BB2BC229A83DB5000643A9 /* ScanDirect.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 44BB2BC029A83DB5000643A9 /* ScanDirect.xcdatamodeld */; };
+		44BB2BCA29A8446C000643A9 /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = 44BB2BC929A8446C000643A9 /* Introspect */; };
+		44BB2BCE29A8453E000643A9 /* KeyInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BB2BCD29A8453E000643A9 /* KeyInput.swift */; };
+		44BB2BD129A84649000643A9 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BB2BD029A84649000643A9 /* Store.swift */; };
+		44BB2BD429A84714000643A9 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BB2BD329A84714000643A9 /* Device.swift */; };
+		44BB2BD629A84731000643A9 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BB2BD529A84731000643A9 /* App.swift */; };
+		44BB2BDA29A84793000643A9 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BB2BD929A84793000643A9 /* LoginView.swift */; };
+		44BB2BDE29A8481B000643A9 /* PhoneLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BB2BDD29A8481B000643A9 /* PhoneLoginView.swift */; };
+		44BB2BE029A8482C000643A9 /* TabletLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BB2BDF29A8482C000643A9 /* TabletLoginView.swift */; };
+		44BB2BE329A849E4000643A9 /* ggcTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BB2BE229A849E4000643A9 /* ggcTheme.swift */; };
+		44BB2BE829A84DEC000643A9 /* ActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = 44BB2BE729A84DEC000643A9 /* ActivityIndicatorView */; };
+		44BB2BEB29A850DF000643A9 /* AWSAPIPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 44BB2BEA29A850DF000643A9 /* AWSAPIPlugin */; };
+		44BB2BED29A850DF000643A9 /* AWSCognitoAuthPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 44BB2BEC29A850DF000643A9 /* AWSCognitoAuthPlugin */; };
+		44BB2BEF29A850DF000643A9 /* AWSDataStorePlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 44BB2BEE29A850DF000643A9 /* AWSDataStorePlugin */; };
+		44BB2BF129A850DF000643A9 /* AWSPinpointAnalyticsPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 44BB2BF029A850DF000643A9 /* AWSPinpointAnalyticsPlugin */; };
+		44BB2BF329A850DF000643A9 /* AWSPluginsCore in Frameworks */ = {isa = PBXBuildFile; productRef = 44BB2BF229A850DF000643A9 /* AWSPluginsCore */; };
+		44BB2BF529A850DF000643A9 /* Amplify in Frameworks */ = {isa = PBXBuildFile; productRef = 44BB2BF429A850DF000643A9 /* Amplify */; };
+		44BB2BFB29A86BD4000643A9 /* FBAuthentication in Frameworks */ = {isa = PBXBuildFile; productRef = 44BB2BFA29A86BD4000643A9 /* FBAuthentication */; };
+		44BB2BFD29A8743A000643A9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 44BB2BFC29A87439000643A9 /* GoogleService-Info.plist */; };
+		44BB2C0329A8779E000643A9 /* PhoneNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BB2C0229A8779E000643A9 /* PhoneNavigationView.swift */; };
+		44BB2C0529A87816000643A9 /* MenuSkeleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BB2C0429A87816000643A9 /* MenuSkeleton.swift */; };
+		44BB2C0729A87850000643A9 /* LogoutButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BB2C0629A87850000643A9 /* LogoutButtonView.swift */; };
+		44BB2C0929A87887000643A9 /* VersionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BB2C0829A87887000643A9 /* VersionView.swift */; };
+		44BB2C0B29A87C3D000643A9 /* TabletHomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BB2C0A29A87C3D000643A9 /* TabletHomeScreen.swift */; };
+		44BB2C0D29A87C5C000643A9 /* NavBarLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BB2C0C29A87C5C000643A9 /* NavBarLinkView.swift */; };
+		44BB2C0F29A87C7E000643A9 /* TabletNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BB2C0E29A87C7E000643A9 /* TabletNavigationView.swift */; };
+		44BB2C1129A917D7000643A9 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BB2C1029A917D7000643A9 /* UserViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +49,24 @@
 		44BB2BBC29A83DB5000643A9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		44BB2BBE29A83DB5000643A9 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		44BB2BC129A83DB5000643A9 /* ScanDirect.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ScanDirect.xcdatamodel; sourceTree = "<group>"; };
+		44BB2BCD29A8453E000643A9 /* KeyInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyInput.swift; sourceTree = "<group>"; };
+		44BB2BD029A84649000643A9 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		44BB2BD329A84714000643A9 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		44BB2BD529A84731000643A9 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		44BB2BD929A84793000643A9 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		44BB2BDD29A8481B000643A9 /* PhoneLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneLoginView.swift; sourceTree = "<group>"; };
+		44BB2BDF29A8482C000643A9 /* TabletLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabletLoginView.swift; sourceTree = "<group>"; };
+		44BB2BE229A849E4000643A9 /* ggcTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ggcTheme.swift; sourceTree = "<group>"; };
+		44BB2BF829A868AC000643A9 /* ScanDirect.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ScanDirect.entitlements; sourceTree = "<group>"; };
+		44BB2BFC29A87439000643A9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		44BB2C0229A8779E000643A9 /* PhoneNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNavigationView.swift; sourceTree = "<group>"; };
+		44BB2C0429A87816000643A9 /* MenuSkeleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuSkeleton.swift; sourceTree = "<group>"; };
+		44BB2C0629A87850000643A9 /* LogoutButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutButtonView.swift; sourceTree = "<group>"; };
+		44BB2C0829A87887000643A9 /* VersionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionView.swift; sourceTree = "<group>"; };
+		44BB2C0A29A87C3D000643A9 /* TabletHomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabletHomeScreen.swift; sourceTree = "<group>"; };
+		44BB2C0C29A87C5C000643A9 /* NavBarLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarLinkView.swift; sourceTree = "<group>"; };
+		44BB2C0E29A87C7E000643A9 /* TabletNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabletNavigationView.swift; sourceTree = "<group>"; };
+		44BB2C1029A917D7000643A9 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +74,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44BB2BFB29A86BD4000643A9 /* FBAuthentication in Frameworks */,
+				44BB2BEB29A850DF000643A9 /* AWSAPIPlugin in Frameworks */,
+				44BB2BF529A850DF000643A9 /* Amplify in Frameworks */,
+				44BB2BF329A850DF000643A9 /* AWSPluginsCore in Frameworks */,
+				44BB2BF129A850DF000643A9 /* AWSPinpointAnalyticsPlugin in Frameworks */,
+				44BB2BE829A84DEC000643A9 /* ActivityIndicatorView in Frameworks */,
+				44BB2BCA29A8446C000643A9 /* Introspect in Frameworks */,
+				44BB2BEF29A850DF000643A9 /* AWSDataStorePlugin in Frameworks */,
+				44BB2BED29A850DF000643A9 /* AWSCognitoAuthPlugin in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +108,13 @@
 		44BB2BB429A83DB4000643A9 /* ScanDirect */ = {
 			isa = PBXGroup;
 			children = (
+				44BB2BFC29A87439000643A9 /* GoogleService-Info.plist */,
+				44BB2BF829A868AC000643A9 /* ScanDirect.entitlements */,
+				44BB2BE129A849C9000643A9 /* Core */,
+				44BB2BD729A84775000643A9 /* Views */,
+				44BB2BD229A846F7000643A9 /* Utilities */,
+				44BB2BCF29A84626000643A9 /* Store */,
+				44BB2BCB29A84513000643A9 /* Framework */,
 				44BB2BB529A83DB4000643A9 /* ScanDirectApp.swift */,
 				44BB2BB729A83DB4000643A9 /* ContentView.swift */,
 				44BB2BB929A83DB5000643A9 /* Assets.xcassets */,
@@ -73,6 +133,121 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		44BB2BCB29A84513000643A9 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				44BB2BCC29A84521000643A9 /* Keystroke */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		44BB2BCC29A84521000643A9 /* Keystroke */ = {
+			isa = PBXGroup;
+			children = (
+				44BB2BCD29A8453E000643A9 /* KeyInput.swift */,
+			);
+			path = Keystroke;
+			sourceTree = "<group>";
+		};
+		44BB2BCF29A84626000643A9 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				44BB2BD029A84649000643A9 /* Store.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		44BB2BD229A846F7000643A9 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				44BB2BD329A84714000643A9 /* Device.swift */,
+				44BB2BD529A84731000643A9 /* App.swift */,
+				44BB2C1029A917D7000643A9 /* UserViewModel.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		44BB2BD729A84775000643A9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				44BB2BFE29A87706000643A9 /* HomeScreen */,
+				44BB2BD829A84783000643A9 /* Login */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		44BB2BD829A84783000643A9 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				44BB2BDC29A847FA000643A9 /* Tablet */,
+				44BB2BDB29A847F0000643A9 /* Phone */,
+				44BB2BD929A84793000643A9 /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		44BB2BDB29A847F0000643A9 /* Phone */ = {
+			isa = PBXGroup;
+			children = (
+				44BB2BDD29A8481B000643A9 /* PhoneLoginView.swift */,
+			);
+			path = Phone;
+			sourceTree = "<group>";
+		};
+		44BB2BDC29A847FA000643A9 /* Tablet */ = {
+			isa = PBXGroup;
+			children = (
+				44BB2BDF29A8482C000643A9 /* TabletLoginView.swift */,
+			);
+			path = Tablet;
+			sourceTree = "<group>";
+		};
+		44BB2BE129A849C9000643A9 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				44BB2BE229A849E4000643A9 /* ggcTheme.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		44BB2BFE29A87706000643A9 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				44BB2C0129A8773D000643A9 /* _Shared */,
+				44BB2C0029A8772A000643A9 /* Phone */,
+				44BB2BFF29A87721000643A9 /* Tablet */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		44BB2BFF29A87721000643A9 /* Tablet */ = {
+			isa = PBXGroup;
+			children = (
+				44BB2C0A29A87C3D000643A9 /* TabletHomeScreen.swift */,
+				44BB2C0C29A87C5C000643A9 /* NavBarLinkView.swift */,
+				44BB2C0E29A87C7E000643A9 /* TabletNavigationView.swift */,
+			);
+			path = Tablet;
+			sourceTree = "<group>";
+		};
+		44BB2C0029A8772A000643A9 /* Phone */ = {
+			isa = PBXGroup;
+			children = (
+				44BB2C0229A8779E000643A9 /* PhoneNavigationView.swift */,
+			);
+			path = Phone;
+			sourceTree = "<group>";
+		};
+		44BB2C0129A8773D000643A9 /* _Shared */ = {
+			isa = PBXGroup;
+			children = (
+				44BB2C0429A87816000643A9 /* MenuSkeleton.swift */,
+				44BB2C0629A87850000643A9 /* LogoutButtonView.swift */,
+				44BB2C0829A87887000643A9 /* VersionView.swift */,
+			);
+			path = _Shared;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -89,6 +264,17 @@
 			dependencies = (
 			);
 			name = ScanDirect;
+			packageProductDependencies = (
+				44BB2BC929A8446C000643A9 /* Introspect */,
+				44BB2BE729A84DEC000643A9 /* ActivityIndicatorView */,
+				44BB2BEA29A850DF000643A9 /* AWSAPIPlugin */,
+				44BB2BEC29A850DF000643A9 /* AWSCognitoAuthPlugin */,
+				44BB2BEE29A850DF000643A9 /* AWSDataStorePlugin */,
+				44BB2BF029A850DF000643A9 /* AWSPinpointAnalyticsPlugin */,
+				44BB2BF229A850DF000643A9 /* AWSPluginsCore */,
+				44BB2BF429A850DF000643A9 /* Amplify */,
+				44BB2BFA29A86BD4000643A9 /* FBAuthentication */,
+			);
 			productName = ScanDirect;
 			productReference = 44BB2BB229A83DB4000643A9 /* ScanDirect.app */;
 			productType = "com.apple.product-type.application";
@@ -117,6 +303,12 @@
 				Base,
 			);
 			mainGroup = 44BB2BA929A83DB4000643A9;
+			packageReferences = (
+				44BB2BC829A8446C000643A9 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
+				44BB2BE629A84DEC000643A9 /* XCRemoteSwiftPackageReference "ActivityIndicatorView" */,
+				44BB2BE929A850DF000643A9 /* XCRemoteSwiftPackageReference "amplify-swift" */,
+				44BB2BF929A86BD4000643A9 /* XCRemoteSwiftPackageReference "FBAuthentication" */,
+			);
 			productRefGroup = 44BB2BB329A83DB4000643A9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -133,6 +325,7 @@
 			files = (
 				44BB2BBD29A83DB5000643A9 /* Preview Assets.xcassets in Resources */,
 				44BB2BBA29A83DB5000643A9 /* Assets.xcassets in Resources */,
+				44BB2BFD29A8743A000643A9 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,8 +337,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				44BB2BBF29A83DB5000643A9 /* Persistence.swift in Sources */,
+				44BB2C0529A87816000643A9 /* MenuSkeleton.swift in Sources */,
+				44BB2C0D29A87C5C000643A9 /* NavBarLinkView.swift in Sources */,
+				44BB2C0329A8779E000643A9 /* PhoneNavigationView.swift in Sources */,
 				44BB2BB829A83DB4000643A9 /* ContentView.swift in Sources */,
+				44BB2BE029A8482C000643A9 /* TabletLoginView.swift in Sources */,
+				44BB2BCE29A8453E000643A9 /* KeyInput.swift in Sources */,
+				44BB2C0729A87850000643A9 /* LogoutButtonView.swift in Sources */,
+				44BB2C0F29A87C7E000643A9 /* TabletNavigationView.swift in Sources */,
+				44BB2BDA29A84793000643A9 /* LoginView.swift in Sources */,
+				44BB2BD129A84649000643A9 /* Store.swift in Sources */,
+				44BB2BDE29A8481B000643A9 /* PhoneLoginView.swift in Sources */,
+				44BB2C0B29A87C3D000643A9 /* TabletHomeScreen.swift in Sources */,
+				44BB2C1129A917D7000643A9 /* UserViewModel.swift in Sources */,
 				44BB2BB629A83DB4000643A9 /* ScanDirectApp.swift in Sources */,
+				44BB2BD629A84731000643A9 /* App.swift in Sources */,
+				44BB2BE329A849E4000643A9 /* ggcTheme.swift in Sources */,
+				44BB2C0929A87887000643A9 /* VersionView.swift in Sources */,
+				44BB2BD429A84714000643A9 /* Device.swift in Sources */,
 				44BB2BC229A83DB5000643A9 /* ScanDirect.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +481,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ScanDirect/ScanDirect.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ScanDirect/Preview Content\"";
@@ -301,6 +511,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ScanDirect/ScanDirect.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ScanDirect/Preview Content\"";
@@ -347,6 +558,89 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		44BB2BC829A8446C000643A9 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/siteline/SwiftUI-Introspect";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.3;
+			};
+		};
+		44BB2BE629A84DEC000643A9 /* XCRemoteSwiftPackageReference "ActivityIndicatorView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/ActivityIndicatorView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		44BB2BE929A850DF000643A9 /* XCRemoteSwiftPackageReference "amplify-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aws-amplify/amplify-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		44BB2BF929A86BD4000643A9 /* XCRemoteSwiftPackageReference "FBAuthentication" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/StewartLynch/FBAuthentication";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		44BB2BC929A8446C000643A9 /* Introspect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 44BB2BC829A8446C000643A9 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;
+			productName = Introspect;
+		};
+		44BB2BE729A84DEC000643A9 /* ActivityIndicatorView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 44BB2BE629A84DEC000643A9 /* XCRemoteSwiftPackageReference "ActivityIndicatorView" */;
+			productName = ActivityIndicatorView;
+		};
+		44BB2BEA29A850DF000643A9 /* AWSAPIPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 44BB2BE929A850DF000643A9 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSAPIPlugin;
+		};
+		44BB2BEC29A850DF000643A9 /* AWSCognitoAuthPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 44BB2BE929A850DF000643A9 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSCognitoAuthPlugin;
+		};
+		44BB2BEE29A850DF000643A9 /* AWSDataStorePlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 44BB2BE929A850DF000643A9 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSDataStorePlugin;
+		};
+		44BB2BF029A850DF000643A9 /* AWSPinpointAnalyticsPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 44BB2BE929A850DF000643A9 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSPinpointAnalyticsPlugin;
+		};
+		44BB2BF229A850DF000643A9 /* AWSPluginsCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 44BB2BE929A850DF000643A9 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSPluginsCore;
+		};
+		44BB2BF429A850DF000643A9 /* Amplify */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 44BB2BE929A850DF000643A9 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = Amplify;
+		};
+		44BB2BFA29A86BD4000643A9 /* FBAuthentication */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 44BB2BF929A86BD4000643A9 /* XCRemoteSwiftPackageReference "FBAuthentication" */;
+			productName = FBAuthentication;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		44BB2BC029A83DB5000643A9 /* ScanDirect.xcdatamodeld */ = {
