@@ -39,6 +39,10 @@
 		44BB2C0D29A87C5C000643A9 /* NavBarLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BB2C0C29A87C5C000643A9 /* NavBarLinkView.swift */; };
 		44BB2C0F29A87C7E000643A9 /* TabletNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BB2C0E29A87C7E000643A9 /* TabletNavigationView.swift */; };
 		44BB2C1129A917D7000643A9 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BB2C1029A917D7000643A9 /* UserViewModel.swift */; };
+		44E99AD529A9A859003B8CC6 /* PersonSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E99AD429A9A859003B8CC6 /* PersonSearchView.swift */; };
+		44E99AD929A9AEC5003B8CC6 /* KeyboardListenerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E99AD829A9AEC5003B8CC6 /* KeyboardListenerView.swift */; };
+		44E99ADB29A9AF5E003B8CC6 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E99ADA29A9AF5E003B8CC6 /* CardView.swift */; };
+		44E99ADD29A9AF84003B8CC6 /* SpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E99ADC29A9AF84003B8CC6 /* SpinnerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +71,10 @@
 		44BB2C0C29A87C5C000643A9 /* NavBarLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarLinkView.swift; sourceTree = "<group>"; };
 		44BB2C0E29A87C7E000643A9 /* TabletNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabletNavigationView.swift; sourceTree = "<group>"; };
 		44BB2C1029A917D7000643A9 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		44E99AD429A9A859003B8CC6 /* PersonSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonSearchView.swift; sourceTree = "<group>"; };
+		44E99AD829A9AEC5003B8CC6 /* KeyboardListenerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardListenerView.swift; sourceTree = "<group>"; };
+		44E99ADA29A9AF5E003B8CC6 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		44E99ADC29A9AF84003B8CC6 /* SpinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +178,8 @@
 		44BB2BD729A84775000643A9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				44E99AD629A9ADFF003B8CC6 /* _Shared */,
+				44E99AD329A9A837003B8CC6 /* PersonSearch */,
 				44BB2BFE29A87706000643A9 /* HomeScreen */,
 				44BB2BD829A84783000643A9 /* Login */,
 			);
@@ -246,6 +256,32 @@
 				44BB2C0829A87887000643A9 /* VersionView.swift */,
 			);
 			path = _Shared;
+			sourceTree = "<group>";
+		};
+		44E99AD329A9A837003B8CC6 /* PersonSearch */ = {
+			isa = PBXGroup;
+			children = (
+				44E99AD429A9A859003B8CC6 /* PersonSearchView.swift */,
+			);
+			path = PersonSearch;
+			sourceTree = "<group>";
+		};
+		44E99AD629A9ADFF003B8CC6 /* _Shared */ = {
+			isa = PBXGroup;
+			children = (
+				44E99AD729A9AE7D003B8CC6 /* KeyboardListenerUIView */,
+				44E99ADA29A9AF5E003B8CC6 /* CardView.swift */,
+				44E99ADC29A9AF84003B8CC6 /* SpinnerView.swift */,
+			);
+			path = _Shared;
+			sourceTree = "<group>";
+		};
+		44E99AD729A9AE7D003B8CC6 /* KeyboardListenerUIView */ = {
+			isa = PBXGroup;
+			children = (
+				44E99AD829A9AEC5003B8CC6 /* KeyboardListenerView.swift */,
+			);
+			path = KeyboardListenerUIView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -347,14 +383,18 @@
 				44BB2C0F29A87C7E000643A9 /* TabletNavigationView.swift in Sources */,
 				44BB2BDA29A84793000643A9 /* LoginView.swift in Sources */,
 				44BB2BD129A84649000643A9 /* Store.swift in Sources */,
+				44E99AD929A9AEC5003B8CC6 /* KeyboardListenerView.swift in Sources */,
 				44BB2BDE29A8481B000643A9 /* PhoneLoginView.swift in Sources */,
 				44BB2C0B29A87C3D000643A9 /* TabletHomeScreen.swift in Sources */,
 				44BB2C1129A917D7000643A9 /* UserViewModel.swift in Sources */,
 				44BB2BB629A83DB4000643A9 /* ScanDirectApp.swift in Sources */,
 				44BB2BD629A84731000643A9 /* App.swift in Sources */,
 				44BB2BE329A849E4000643A9 /* ggcTheme.swift in Sources */,
+				44E99ADB29A9AF5E003B8CC6 /* CardView.swift in Sources */,
+				44E99AD529A9A859003B8CC6 /* PersonSearchView.swift in Sources */,
 				44BB2C0929A87887000643A9 /* VersionView.swift in Sources */,
 				44BB2BD429A84714000643A9 /* Device.swift in Sources */,
+				44E99ADD29A9AF84003B8CC6 /* SpinnerView.swift in Sources */,
 				44BB2BC229A83DB5000643A9 /* ScanDirect.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

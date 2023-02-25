@@ -16,9 +16,11 @@ struct PhoneLoginView: View {
     @State private var showAlert = false
     var primaryColor: UIColor
     var secondaryColor: UIColor
+    @State private var GoToPhoneNavigatoinView = false
 
     
     var body: some View {
+            
         ZStack {
             Color("GGCDarkGreen")
                 .edgesIgnoringSafeArea(.vertical)
@@ -40,53 +42,47 @@ struct PhoneLoginView: View {
                     
                     TextField("GGC ID",
                               text: self.$user.ggcId, prompt: Text("ggc ID").foregroundColor(.black))
-                        .background(Color(.systemGray6))
-                        .keyboardType(.numberPad)
-                        .overlay {
-                            RoundedRectangle(cornerRadius: 10)
+                    .background(Color(.systemGray6))
+                    .keyboardType(.numberPad)
+                    .overlay {
+                        RoundedRectangle(cornerRadius: 10)
                             .stroke(.black, lineWidth: 3)
                     }
                     SecureField("Password", text: $user.password, prompt: Text("password").foregroundColor(.black))
                         .background(Color(.systemGray6))
                         .overlay {
                             RoundedRectangle(cornerRadius: 10)
-                            .stroke(.black, lineWidth: 3)
-                    }
+                                .stroke(.black, lineWidth: 3)
+                        }
                     
-                    Button {
-                        /*FBAuth.authenticate(withEmail: self.user.ggcId,
-                                            password: self.user.password) { (result) in
-                            switch result {
-                            case .failure(let error):
-                                self.authError = error
-                                self.showAlert = true
-                            case .success:
-                                print("Signed in")
-                            }
-                        }*/
-                    }label: {
+                    Button{
+                        GoToPhoneNavigatoinView.toggle()
+                    } label: {
                         Text("Login")
                             .padding(.vertical, 15)
                             .frame(width: 200)
                             .background(Color(primaryColor))
                             .cornerRadius(8)
-                            .foregroundColor(.white)
+                            .foregroundColor(.black)
                             .opacity(user.isLogInComplete ? 1 : 0.75)
-                    }.disabled(!user.isLogInComplete)
+                    }.sheet(isPresented: $GoToPhoneNavigatoinView){
+                        PhoneNavigationView(showSheet: .constant(false),
+                                            primaryColor: .systemGray,
+                                            secondaryColor: .systemGray)
+                        }
+                        .padding(.vertical, 24)
+                        .padding(.horizontal)
+                        .background(
+                            RoundedRectangle(cornerRadius: 16)
+                                .fill(Color("CardBackground"))
+                        )
+                        .padding(.horizontal)
+                    Spacer()
+                   }
                 }
-                .padding(.vertical, 24)
-                .padding(.horizontal)
-                .background(
-                    RoundedRectangle(cornerRadius: 16)
-                        .fill(Color("CardBackground"))
-                )
-                .padding(.horizontal)
-                
-                Spacer()
             }
         }
     }
-}
 
 struct PhoneLoginView_Previews: PreviewProvider {
     static var previews: some View {
