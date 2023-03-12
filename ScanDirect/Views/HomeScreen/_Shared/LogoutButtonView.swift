@@ -6,10 +6,8 @@
 //
 
 import SwiftUI
-import FBAuthentication
 
 struct LogoutButtonView: View {
-    @EnvironmentObject var userInfo: UserInfo
     @State var showAlert = false
     
     var body: some View {

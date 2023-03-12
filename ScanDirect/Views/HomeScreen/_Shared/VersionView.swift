@@ -6,10 +6,9 @@
 //
 
 import SwiftUI
-import FBAuthentication
+import Firebase
 
 struct VersionView: View {
-    @EnvironmentObject var userInfo: UserInfo
     
     let environmentName: String = {
         guard let dict = Bundle.main.infoDictionary else {

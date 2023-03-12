@@ -8,10 +8,9 @@
 import Foundation
 import UIKit
 import SwiftUI
-import FBAuthentication
+import Firebase
 
 struct TabletLoginView: View {
-    @EnvironmentObject var userInfo: UserInfo
     @State var switchLogo = false
     
     var body: some View {

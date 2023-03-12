@@ -6,37 +6,79 @@
 //
 
 import SwiftUI
-import FBAuthentication
+import UIKit
+import Firebase
+
 
 public struct PersonSearchView: View {
     @Environment(\.presentationMode) var presentationMode
-    @EnvironmentObject var userInfo: UserInfo
-    @State private var fullname = ""
+    @State var user: UserViewModel = UserViewModel()
+    @State var name: ContentViewModel = ContentViewModel()
+    @State private var isSideBarOpened = false
     var primaryColor: UIColor
-    public init(primaryColor: UIColor = .systemGray6) {
-    self.primaryColor = primaryColor
-    }
+    var secondaryColor: UIColor
     
-    public var body: some View {
-        ZStack {
+public var body: some View {
+        
+        
+    ZStack {
+        NavigationView {
             
             Color("GGCDarkGreen")
                 .edgesIgnoringSafeArea(.vertical)
+                .toolbar {
+                    Button {
+                        isSideBarOpened.toggle()
+                    } label: {
+                        Label("Toggle SideBar",
+                              systemImage: "line.3.horizontal.circle")
+                    }
+                }
+                .listStyle(.inset)
+        }
+        SideBarView(isSidebarVisible: $isSideBarOpened, primaryColor: .systemGray,
+                        secondaryColor: .systemGray)
+        
+    CardView {
             
-            VStack {
-                Text(userInfo.user.name)
-                    .font(.title)
+        HStack {
+            
+            if /* let image = checkIn.profilePicture */ false {
+                //                    image
+                //                        .resizable()
+                //                        .scaledToFit()
+                //                        .frame(width: 75, height: 75)
+                //                        .clipShape(RoundedRectangle(cornerRadius: 16))
+            } else {
+                Image("profileIcon")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 200, height: 200)
+                    .clipShape(RoundedRectangle(cornerRadius: 16))
             }
-            .padding(.top, 40)
-            .padding(.horizontal, 10)
-        }.onAppear {
-            fullname = userInfo.user.name
+            
+            VStack(alignment: .leading, spacing: 4) {
+                /*Text($userInfo.name)
+                 .bold()
+                 .frame(maxWidth: .infinity, alignment: .leading)
+                 
+                 IdentityTagView(person.ggcId, person.displayName)
+                 .setColor(color: Color("TagColor"))*/
+            }
+            }
+            }
+        Text(user.fullname)
+                .bold()
+                .foregroundColor(.black)
+                .padding([.bottom], 100)
+                .padding([.top], 100)
         }
     }
 }
 
-struct ProfileView_Previews: PreviewProvider {
+struct PersonSearchView_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileView().environmentObject(UserInfo())
+        PersonSearchView(primaryColor: .systemGray6,
+                         secondaryColor: .systemGray6)
     }
 }

@@ -6,16 +6,14 @@
 //
 
 import Foundation
+import Firebase
 
 struct UserViewModel {
     var ggcId: String = ""
     var password: String = ""
     var fullname: String = ""
-    var confirmPassword: String = ""
-    // MARK: - Validation Checks
-    func passwordsMatch(_ confirmPW: String) -> Bool {
-        return confirmPW == password
-    }
+
+   
     func isEmpty(_ field: String) -> Bool {
         return field.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
     }
@@ -23,29 +21,32 @@ struct UserViewModel {
         // Password must be 8 chars, contain a capital letter and a number
             let passwordTest = NSPredicate(format: "SELF MATCHES %@",
                                            "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}")
+        
             return passwordTest.evaluate(with: ggcId)
     }
     func isPasswordValid(_ password: String) -> Bool {
         // Password must be 8 chars, contain a capital letter and a number
         let passwordTest = NSPredicate(format: "SELF MATCHES %@",
                                        "^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{8,}$")
+        
         return passwordTest.evaluate(with: password)
     }
     var isSignInComplete: Bool {
         if  !isGGCIDValid(ggcId) ||
             isEmpty(fullname) ||
-            !isPasswordValid(password) ||
-            !passwordsMatch(confirmPassword) {
+            !isPasswordValid(password) {
             return false
+        } else {
+            return true
         }
-        return true
     }
     var isLogInComplete: Bool {
         if isEmpty(ggcId) ||
             isEmpty(password) {
             return false
+        } else {
+            return true
         }
-        return true
     }
     // MARK: - Validation Error Strings
     var validNameText: String {
@@ -55,7 +56,7 @@ struct UserViewModel {
             return "Enter your full name"
         }
     }
-    var validEmailAddressText: String {
+    var validGGCIDessText: String {
         if isGGCIDValid(ggcId) {
             return ""
         } else {
@@ -67,13 +68,6 @@ struct UserViewModel {
             return ""
         } else {
             return "Must be 8 characters containing at least one number and one Capital letter."
-        }
-    }
-    var validConfirmPasswordText: String {
-        if passwordsMatch(confirmPassword) {
-            return ""
-        } else {
-            return "Password fields do not match."
         }
     }
 }

@@ -7,58 +7,83 @@
 
 import Foundation
 import SwiftUI
-import FBAuthentication
-
+import Firebase
 
 struct PhoneNavigationView: View {
+    
     @EnvironmentObject var store: Store
-    @EnvironmentObject var userInfo: UserInfo
     @State var user: UserViewModel = UserViewModel()
     @Binding var showSheet: Bool
+    @State private var isSideBarOpened = false
     @State private var showAlert = false
     var primaryColor: UIColor
     var secondaryColor: UIColor
+    @StateObject private var model = ContentViewModel()
     @State private var GoToPersonSearchView = false
+    @State private var GoToFrameView = false
+
 
     var body: some View {
         ZStack {
+            NavigationView {
+            
             Color("GGCDarkGreen")
                 .edgesIgnoringSafeArea(.vertical)
+
+                .toolbar {
+                    Button {
+                        isSideBarOpened.toggle()
+                        
+                    } label: {
+                        Label("Toggle SideBar",
+                              systemImage: "line.3.horizontal.circle")
+                    }
+                }
+                .listStyle(.inset)
+        }
+        SideBarView(isSidebarVisible: $isSideBarOpened, primaryColor: .systemGray,
+                        secondaryColor: .systemGray)
             
             VStack {
+                
                 Image("GGCLogo")
-                    .resizable()
+                .resizable()
                     .scaledToFit()
                     .frame(width: 200, height: 200, alignment: .center)
                     .padding([.bottom], 150)
                     .padding([.top], 100)
                 
-                Button{
+                Button {
+                    
+                    GoToFrameView.toggle()
                     
                 } label: {
-                    Text("Scanner")
+                    Text("Scan ID")
                         .font(.system(size: 33))
                         .padding(.vertical, 25)
                         .frame(width: 200)
                         .background(Color(primaryColor))
                         .cornerRadius(8)
                         .foregroundColor(.black)
-                }.sheet(isPresented: $GoToPersonSearchView){
-                    PersonSearchView(primaryColor: .systemGray6)
-                    }
-                    .padding(.vertical, 24)
-                    .padding(.horizontal)
-                    .background(
-                        RoundedRectangle(cornerRadius: 16)
-                            .fill(Color("CardBackground"))
-                    )
-                    .padding(.horizontal)
+                }.fullScreenCover(isPresented: $GoToFrameView){
+                    FrameView(image: model.frame)
+                        .edgesIgnoringSafeArea(.all)
+                    ErrorView(error: model.error)
+                }
+                .padding(.vertical, 24)
+                .padding(.horizontal)
+                .background(
+                    RoundedRectangle(cornerRadius: 16)
+                        .fill(Color("CardBackground"))
+                )
+                .padding(.horizontal)
+                //.hidden()
                 Spacer()
                 
                 TextField("GGC ID or Student name",
                           text: self.$user.ggcId, prompt: Text("GGC ID/Name").foregroundColor(.black))
                 .font(.system(size: 33))
-                .frame(width: 300)
+                .frame(width: 200)
                 .padding([.bottom], 30)
                 .background(Color(.systemGray6))
                 .keyboardType(.default)
@@ -77,18 +102,19 @@ struct PhoneNavigationView: View {
                         .background(Color(primaryColor))
                         .cornerRadius(8)
                         .foregroundColor(.black)
-                }.sheet(isPresented: $GoToPersonSearchView){
-                    PersonSearchView(primaryColor: .systemGray6)
-                    }
-                    .padding(.vertical, 24)
-                    .padding(.horizontal)
-                    .background(
-                        RoundedRectangle(cornerRadius: 16)
-                            .fill(Color("CardBackground"))
-                    )
-                    .padding(.horizontal)
-                Spacer()
-               }
+                }.fullScreenCover(isPresented: $GoToPersonSearchView){
+                    PersonSearchView(primaryColor: .systemGray6,
+                                     secondaryColor: .systemGray6)
+                }
+                .padding(.vertical, 24)
+                .padding(.horizontal)
+                .background(
+                    RoundedRectangle(cornerRadius: 16)
+                        .fill(Color("CardBackground"))
+                )
+                .padding(.horizontal)
+                .padding([.bottom], 50)
+                }
             }
         }
     }

@@ -6,10 +6,9 @@
 //
 
 import SwiftUI
-import FBAuthentication
+import Firebase
 
 struct MyLoginView: View {
-    @EnvironmentObject var userInfo: UserInfo
     @State private var showSheet = false
     var primaryColor: UIColor
     var secondaryColor: UIColor

@@ -8,7 +8,6 @@
 import SwiftUI
 import Amplify
 import Firebase
-import FBAuthentication
 import AWSCognitoAuthPlugin
 import AuthenticationServices
 
@@ -21,6 +20,7 @@ class LoginViewController: UIViewController, ASWebAuthenticationPresentationCont
 
 @main
 struct ScanDirectApp: App {
+    
     let persistenceController = PersistenceController.shared
     
     init() {
@@ -32,7 +32,6 @@ struct ScanDirectApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environmentObject(UserInfo());
         }
     }
 }
